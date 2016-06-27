@@ -9,4 +9,4 @@ A custom implementation of various structures defined in the stl.
 
 The sort functions cannot be implemented in a singly linked list, nor a doubly linked list. The complexity will be too high because swapping distant elements (such as swapping the beginning with the end) is O(n) in itself. Sort functions will become implemented with structures that use random access. 
 
-These .h and .tpp files I just uploaded have not been compiled or ran on my compiler, a g++ v-5.4.0 compiler. I cannot guarantee they are error free. 
+These .h and .tpp files I just uploaded have not been compiled or ran on my compiler, a g++ v-5.4.0 compiler. I cannot guarantee they are error free as of yet. Testing will be done soon.
