@@ -1,9 +1,9 @@
 # Structures
 An implementation of various structures defined in the stl, with custom functions added.
 
-Updates:
+### Updates:
 
-8:53pm 6/26/2016
+###### 8:53pm 6/26/2016
 
 Singly linked list: Added two base files
 These two base files contain information to compile and run a linked list using single, forward links. Soon to come is the reverse() function, swap(), function, and others I currently cannot think off the top of my head. 
