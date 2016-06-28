@@ -3,6 +3,9 @@ A custom implementation of various structures defined in the stl.
 
 ### Updates:
 
+###### 2:47pm 6/28/2016
+**Singly linked list: Scrap and restart** Scrap the old project, implement a simple, non-generic version of a linked list that uses strictly integers, and work from there.
+
 ###### 8:53pm 6/26/2016
 
 **Singly linked list: Added two base files** These two base files contain information to compile and run a linked list using single, forward links. Soon to come is the reverse() function, swap(), function, and others I currently cannot think off the top of my head. 
