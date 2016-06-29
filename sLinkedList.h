@@ -24,13 +24,18 @@ class sLinkedList
   
   public:
   sLinkedList();
-  void push_front(int);
-  void push_back(int);
+  sLinkedList(const sLinkedList& someList);
+  sLinkedList& operator=(const sLinkedList& someList);
+  ~sLinkedList();
+  void clear();
+  void push_front(int data);
+  void push_back(int data);
   void pop_front();
   void pop_back();
   void insert(int data, int loc);
   // void remove(int data); To be implemented with generics.
   void remove(int loc);
+  int& retrieve(int loc);
   void reverse();
   int length();
   void print();
