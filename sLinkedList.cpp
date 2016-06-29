@@ -13,6 +13,51 @@ sLinkedList::sLinkedList() : mSize(0), begin(nullptr)
   
 }
 
+sLinkedList::sLinkedList(const sLinkedList& someList) : mSize(0),
+  begin(nullptr)
+{
+  node* iter = someList.begin;
+  while(iter != nullptr)
+  {
+    push_back(iter->mData);    
+    iter = iter->next;
+  }
+}
+
+sLinkedList& sLinkedList::operator=(const sLinkedList& someList)
+{
+  
+  if(this != &someList)
+  {
+    
+    clear();
+    for(node* iter = someList.begin; iter != nullptr; iter = iter->next)
+    {
+      push_back(iter->mData);
+    }
+  }
+
+}
+
+sLinkedList::~sLinkedList()
+{
+  clear();
+}
+
+void sLinkedList::clear()
+{
+  if(length() > 0)
+  {
+    while(length() != 1)
+    {
+      pop_front();
+    }
+    
+    delete begin;
+    --mSize;
+  }
+}
+
 void sLinkedList::push_front(int data)
 {
   node* newNode = new node(data);
@@ -197,6 +242,23 @@ void sLinkedList::remove(int loc)
     --mSize;
   }
   
+}
+
+int& sLinkedList::retrieve(int loc)
+{
+  if(begin == nullptr)
+  {
+    std::cerr << "The list is empty: Undefined behavior" << std::endl;
+    return begin->mData;
+  }
+  int count = 1;
+  for(node* iter = begin; count <= length(); iter = iter->next, ++count)
+  {
+    if(count == loc)
+    {
+      return iter->mData;
+    }
+  }
 }
 
 void sLinkedList::reverse()
