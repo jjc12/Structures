@@ -3,7 +3,7 @@ A custom implementation of various structures defined in the stl.
 
 ### Updates:
 
-###### 12:59 6/28/2016
+###### 12:59pm 6/28/2016
 **Singly linked list: Add a makefile, typical list functions, and reverse() function** The makefile will compile the .cpp files and produce object files + an executable. If this is running on a Linux environment such as cygwin, the .exe can be removed.
 
 ###### 2:47pm 6/28/2016
